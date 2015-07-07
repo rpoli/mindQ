@@ -1,0 +1,2 @@
+# mindQ
+mindQ
