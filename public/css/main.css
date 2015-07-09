@@ -1,0 +1,201 @@
+*{
+	border : 0px;
+	margin : 0px; 
+} 
+h1,h2,h3,h4,p
+{
+	margin : 0px;
+	padding : 0px;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+.clear { clear : both; }
+.row { margin-left:0px; margin-right:0px;}
+body {
+    font-family: 'Roboto', sans-serif;
+	color : #FFFFFF;
+}
+video#bgvid {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url(polina.jpg) no-repeat;
+	background-size: cover;
+}
+.header
+{
+	#background-color: #004656;
+	  background-color: rgba(0, 70, 86, 1);
+	height: 60px;
+	border-bottom: 4px solid #22A7F0;
+}
+.header-inner
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+	color: #22A7F0;
+	font-size: 25px;
+}
+
+div.header-inner span
+{
+	color: #4183D7;
+}
+
+.category-header-inner
+{
+	background-color: rgba(255, 255, 255, 0.22);
+	border-radius: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 0 10px 30px;
+}	
+.category-header-inner h1
+{
+	color: #FFFFFF;
+}
+.category-header-inner h1 span
+{
+	color: #00ADE3;
+}
+.game
+{
+	margin-top : 20px;
+}
+.ques-main
+{
+	#background-color : rgba(0, 70, 86, 0.4);
+	background-color: rgba(0, 70, 86, 1);
+	border-top: 4px solid #22A7F0;
+	padding: 10px 30px 10px 30px;
+}
+
+.question .ques-left
+{
+	font-size : 25px;
+}
+.question .ques-right
+{
+	font-size: 25px;
+}
+.question .ques-right p
+{
+	padding: 16px 0 0 0;
+}
+.options {
+	margin-top: 16px;
+	font-size: 18px;
+}
+.options ul li 
+{
+	background-color: #00ADE3;
+	padding: 10px;
+	border: 3px solid #2FC3F5;
+	border-radius: 36px;
+	cursor : pointer;
+	box-shadow : 0px 0px 0px #000000;
+	list-style : none;
+	margin-bottom: 10px;
+	margin-right : 16px;
+}
+.options ul li:hover 
+{
+	box-shadow: 0px 1px 10px #000000;	
+	-webkit-transition : box-shadow 0.5s;
+}
+.options ul li:active 
+{
+	box-shadow: 0px 0px 0px #000000;	
+	-webkit-transition : box-shadow 0.1s;
+}
+.options ul li span
+{
+	color: #004656;
+	border-right: 1px solid #0FC6FF;
+	padding-right: 8px;
+	margin-right: 10px;
+}
+
+.options ul li.correct
+{
+	background-color: #00C219;
+	border: 3px solid #00D81C;
+}
+
+.options ul li.selected
+{
+	border: 3px solid #342FF5;
+	background-color: #FFFFFF;
+	color: #00ADE3;
+}
+.options ul li.correct span 
+{
+	color: #00690E;
+	border-right: 1px solid #7FF78E;
+}
+.game-options
+{
+	background-color: rgba(0, 70, 86, 1);
+	border-top: 4px solid #22A7F0;
+	margin-top : 18px;
+	padding : 10px 0 10px 0;
+}
+.game-options ul
+{
+	list-style : none;
+}
+.game-options ul li
+{
+	background-color: #FFFFFF;
+	padding: 10px 10px 10px 10px;
+	border-radius: 20px;
+	color: #000000;
+	border: 3px solid #000000;
+	cursor : pointer;
+	margin-bottom: 10px;
+}
+.game-options ul li:hover 
+{
+	box-shadow: 0px 1px 10px #000000;	
+	-webkit-transition : box-shadow 0.5s;
+}
+.game-options ul li:active 
+{
+	box-shadow: 0px 0px 0px #000000;	
+	-webkit-transition : box-shadow 0.1s;
+}
+.game-options ul li img
+{
+	width : 20px;
+}
+.game-right
+{
+	background-color: rgba(0, 70, 86, 1);
+	border-top: 4px solid #22A7F0;
+}
+.game-left ul 
+{
+	margin-left: -39px;
+}
+ul.questions-list
+{
+	list-style : none;
+}
+ul.questions-list li
+{
+	padding : 10px;
+}
+ul.questions-list li.current
+{
+	font-size : 20px;
+}
