@@ -4,22 +4,30 @@
 
 exports.renderBase = function(req, res, next) {
     res.render('layouts/index.html', {
-        msg: "Welcome"
+        msg: "Welcome11"
     });
 };
 exports.startShow = function(req, res, next){
-    
-
-    if(false)
+   
+    if(true)
     {
-        res.send("hello");
+        res.redirect('/question');
     }else{
-        res.redirect('/#invalid-session');
+        
+        res.render('layouts/index.html', {
+            msg: "error"
+        });
     }
-    
-
-
 };
+
+exports.question = function(req, res, next){
+   console.log("export question");
+   res.render('layouts/question.html', {
+            msg: "error"
+        });
+    //res.json({});
+   // res.render('layouts/question.html');
+}
 exports.home = function(req, res, next) {
     res.json(req.user);
 };

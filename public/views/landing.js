@@ -7,7 +7,7 @@ define(['react'], function(React){
 		},
 		render : function(){
 			return <div>
-					<form action="/startShow" method="post">
+					<form action="/" method="post">
 					<h4>Please enter your details below</h4>
 						Name : <input type="text" name="userName" value="" />
 						<br/>
