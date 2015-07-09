@@ -7,7 +7,19 @@ exports.renderBase = function(req, res, next) {
         msg: "Welcome"
     });
 };
+exports.startShow = function(req, res, next){
+    
 
+    if(false)
+    {
+        res.send("hello");
+    }else{
+        res.redirect('/#invalid-session');
+    }
+    
+
+
+};
 exports.home = function(req, res, next) {
     res.json(req.user);
 };

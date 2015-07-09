@@ -1,11 +1,16 @@
-define(['backbone', 'react', 'jsx!views/todoList'], function (Backbone, React, TodoList) {
+define(['backbone', 'react', 'jsx!views/landing'], function (Backbone, React, Landing) {
   return Backbone.Router.extend({
     routes: {
       '*default': 'defaultAction'
     },
     
     defaultAction: function () {
-      var todos = new Backbone.Collection([
+
+      console.log("create session");
+
+      React.renderComponent(<Landing />, document.body);
+
+      /* var todos = new Backbone.Collection([
         {
           text: 'Dishes!',
           dueDate: new Date(),
@@ -16,7 +21,9 @@ define(['backbone', 'react', 'jsx!views/todoList'], function (Backbone, React, T
           keyID : 1234
         }
       ]);
-     React.renderComponent(<TodoList todos={todos} />, document.body);
+      React.renderComponent(<TodoList todos={todos} />, document.body); 
+
+      */
     }
   });
 });
