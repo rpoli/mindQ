@@ -1,0 +1,114 @@
+{  
+   "mindQ":
+      {  
+         "Category": 
+            {  
+               "name":"UI",
+               "questionAndAnswerObject":[  
+                  {  
+                     "q":"QuestionOne",
+                     "options":["a1","b1","c1","d1"]
+                  },
+                  {  
+                     "q":"QuestionTwo",
+                     "options":["a2","b2","c2","d2"]
+                  },
+                  {  
+                     "q":"QuestionThree",
+                     "options":["a3","b3","c3","d3"]
+                  } ,
+                  {  
+                     "q":"Question4",
+                     "options":["c4","c4","c4","c4"]
+                  }  ,
+                  {  
+                     "q":"Question5",
+                     "options":["c5","c5","c5","c5"]
+                  }  ,
+                  {  
+                     "q":"Question6",
+                     "options":["c6","c6","c6","c6"]
+                  }  ,
+                  {  
+                     "q":"Question7",
+                     "options":["c7","c7","c7","c7"]
+                  } ,
+                  {  
+                     "q":"Question8",
+                     "options":["c8","c8","c8","c8"]
+                  },
+                  {  
+                     "q":"Question9",
+                     "options":["c9","c9","c9","c9"]
+                  } ,
+                  {  
+                     "q":"Question10",
+                     "options":["c10","c10","c10","c10"]
+                  }                   
+               ]
+            },
+
+            "Score":{
+                  "levels":[
+                                              
+                        {
+                           "level":"1",
+                           "points":"100",
+                           "className":""
+                        },
+                        {
+                           "level":"2",
+                           "points":"500",
+                           "className":""
+                        },
+                        {
+                           "level":"3",
+                           "points":"1000",
+                           "className":""
+                        },
+                         {
+                           "level":"4",
+                           "points":"2000",
+                           "className":""
+                        }, 
+                        {
+                           "level":"5",
+                           "points":"5000",
+                           "className":""
+                        },  
+                        {
+                           "level":"6",
+                           "points":"10000",
+                           "className":""
+                        },
+                        {
+                           "level":"7",
+                           "points":"20000",
+                           "className":""
+                        },
+                        {
+                           "level":"8",
+                           "points":"50000",
+                           "className":""
+                        },
+                        {
+                           "level":"9",
+                           "points":"100000",
+                           "className":""
+                        },
+
+                        {
+                           "level":"10",
+                           "points":"300000",
+                           "className":""
+                        }
+                                                                     
+                     ]
+            },
+            "correctAnswer":true
+         
+      }
+      
+
+}
+   

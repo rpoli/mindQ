@@ -74,7 +74,7 @@ div.header-inner span
 }
 .ques-main
 {
-	#background-color : rgba(0, 70, 86, 0.4);
+	//background-color : rgba(0, 70, 86, 0.4);
 	background-color: rgba(0, 70, 86, 1);
 	border-top: 4px solid #22A7F0;
 	padding: 10px 30px 10px 30px;
@@ -96,7 +96,7 @@ div.header-inner span
 	margin-top: 16px;
 	font-size: 18px;
 }
-.options ul li 
+.options  button 
 {
 	background-color: #00ADE3;
 	padding: 10px;
@@ -108,17 +108,17 @@ div.header-inner span
 	margin-bottom: 10px;
 	margin-right : 16px;
 }
-.options ul li:hover 
+.options button 
 {
 	box-shadow: 0px 1px 10px #000000;	
 	-webkit-transition : box-shadow 0.5s;
 }
-.options ul li:active 
+.options button
 {
 	box-shadow: 0px 0px 0px #000000;	
 	-webkit-transition : box-shadow 0.1s;
 }
-.options ul li span
+.options button span
 {
 	color: #004656;
 	border-right: 1px solid #0FC6FF;
@@ -126,19 +126,19 @@ div.header-inner span
 	margin-right: 10px;
 }
 
-.options ul li.correct
+.options button.correct
 {
 	background-color: #00C219;
 	border: 3px solid #00D81C;
 }
 
-.options ul li.selected
+.options button.selected
 {
 	border: 3px solid #342FF5;
 	background-color: #FFFFFF;
 	color: #00ADE3;
 }
-.options ul li.correct span 
+.options button.correct span 
 {
 	color: #00690E;
 	border-right: 1px solid #7FF78E;
@@ -154,7 +154,7 @@ div.header-inner span
 {
 	list-style : none;
 }
-.game-options ul li
+.game-options button
 {
 	background-color: #FFFFFF;
 	padding: 10px 10px 10px 10px;
@@ -164,17 +164,19 @@ div.header-inner span
 	cursor : pointer;
 	margin-bottom: 10px;
 }
-.game-options ul li:hover 
+.game-options button:hover 
 {
-	box-shadow: 0px 1px 10px #000000;	
+	box-shadow: 0px 1px 10px #000000;
+	//background: orange;	
 	-webkit-transition : box-shadow 0.5s;
 }
-.game-options ul li:active 
+.game-options button:active 
 {
+	//background: orange;	
 	box-shadow: 0px 0px 0px #000000;	
 	-webkit-transition : box-shadow 0.1s;
 }
-.game-options ul li img
+.game-options button img
 {
 	width : 20px;
 }
@@ -182,6 +184,10 @@ div.header-inner span
 {
 	background-color: rgba(0, 70, 86, 1);
 	border-top: 4px solid #22A7F0;
+
+}
+.game-right ul{
+	margin: 30px 35px 30px 0px;
 }
 .game-left ul 
 {
@@ -194,8 +200,45 @@ ul.questions-list
 ul.questions-list li
 {
 	padding : 10px;
+	font-size: 25px;
+
 }
+
 ul.questions-list li.current
 {
 	font-size : 20px;
+}
+
+.selected{
+	background: orange;
+}
+.quitOverlay{
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.2);
+    width:300px;
+    height:400px;
+    border:1px solid black;
+
+}
+.modal{	
+	color:black;
+	font-size: 16px;
+}
+.optionSelected{
+	background-color: orange !important;
+}
+.wrong{
+	background-color: red !important;
+}
+.correct{
+	background-color: green !important;
+}
+
+button.disabled{
+	background-color:#ccc;
 }

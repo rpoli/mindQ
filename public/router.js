@@ -1,29 +1,26 @@
-define(['backbone', 'react', 'jsx!views/landing'], function (Backbone, React, Landing) {
-  return Backbone.Router.extend({
+define(['backbone', 'react','collections/mindqCollection','reactTemplates/Dashboard'], function (Backbone,React,mindqCollection,Dashboard) {
+ var Router= Backbone.Router.extend({
     routes: {
       '*default': 'defaultAction'
     },
+
+     initialize: function() {
+     var collections = new mindqCollection();    
+      collections.fetch({success:this.defaultAction});
+      
+    },
     
-    defaultAction: function () {
-
+    defaultAction: function (collections) {
       console.log("create session");
+      console.log(collections,"collections");
+     // React.renderComponent(<Dashboard/>, document.body);
 
-      React.renderComponent(<Landing />, document.body);
+      React.render(
+            React.createElement(Dashboard, {"minqObject" : collections.models}),
+            document.body
+          );
 
-      /* var todos = new Backbone.Collection([
-        {
-          text: 'Dishes!',
-          dueDate: new Date(),
-          keyID : 123
-        },{
-          text: 'Dishes2!',
-          dueDate: new Date(),
-          keyID : 1234
-        }
-      ]);
-      React.renderComponent(<TodoList todos={todos} />, document.body); 
-
-      */
     }
   });
+  return Router;
 });
