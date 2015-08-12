@@ -1,7 +1,7 @@
 /**
  * @jsx React.DOM
  */
-define(['react','reactTemplates/Row'],function(React,Row) {
+define(['react','reactTemplates/ContainerHeader','reactTemplates/QSectionComponent'],function(React,ContainerHeader,QSectionComponent) {
 	//Intial Component to load Dashboard
 
 	  var Dashboard = React.createClass({
@@ -10,9 +10,11 @@ define(['react','reactTemplates/Row'],function(React,Row) {
 	  	return(<div className="parentContainer">
 
 							<div className="container">
-							
-
-							<Row cols={minqObject} />
+								<div className="container">
+								<ContainerHeader header={minqObject} />
+								<QSectionComponent qstnsObj={minqObject} />
+								
+							</div>
 								
 							</div>
 					</div>)	    

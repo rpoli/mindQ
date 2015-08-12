@@ -3,9 +3,7 @@ require.config({
     'jquery':{
     exports: '$'
   },
-    'zepto': {
-      exports: 'Zepto'
-    },
+    
     'underscore': {
       exports: '_'
     },
